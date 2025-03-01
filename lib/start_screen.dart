@@ -9,7 +9,11 @@ class StartScreen extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Image.asset('assets/images/quiz-logo.png', width: 350),
+          Image.asset('assets/images/quiz-logo.png', width: 350, color: const Color.fromARGB(167, 0, 0, 0),),
+          // Opacity(
+          //   opacity: 0.9,
+          //   child: Image.asset('assets/images/quiz-logo.png', width: 350),
+          // ),
           SizedBox(height: 30),
           Text(
             "Who's Megumin?",
@@ -25,7 +29,7 @@ class StartScreen extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               foregroundColor: const Color.fromARGB(255, 255, 255, 255),
               side: BorderSide(color: Colors.white),
-              iconColor: Colors.white
+              iconColor: Colors.white,
             ),
             icon: Icon(Icons.arrow_right_alt_outlined),
             label: const Text('Start Quiz'),
