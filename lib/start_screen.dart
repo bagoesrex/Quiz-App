@@ -19,7 +19,7 @@ class StartScreen extends StatelessWidget {
           // ),
           SizedBox(height: 30),
           Text(
-            "Who's Megumin?",
+            "Megumin: Explosion Witch!",
             style: GoogleFonts.poppins(
               color: const Color.fromARGB(255, 255, 255, 255),
               fontSize: 20,

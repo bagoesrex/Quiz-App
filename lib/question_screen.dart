@@ -5,7 +5,7 @@ import 'package:quiz_app/data/questions.dart';
 
 class QuestionScreen extends StatefulWidget {
   const QuestionScreen({super.key, required this.onSelectedAnswer});
-  
+
   final void Function(String answer) onSelectedAnswer;
 
   @override
@@ -40,16 +40,20 @@ class _QuestionScreenState extends State<QuestionScreen> {
               currentQuestion.text,
               style: GoogleFonts.poppins(
                 color: const Color.fromARGB(185, 140, 6, 6),
-                fontSize: 19,
+                fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 30),
             ...currentQuestion.getShuffledAnswer().map((answer) {
-              return AnswerButton(answerText: answer, onTap: (){
-                answerQuestion(answer);
-              });
+              return Padding(
+                padding: const EdgeInsets.symmetric(vertical: 2.0),
+                child: AnswerButton(
+                  answerText: answer,
+                  onTap: () => answerQuestion(answer),
+                ),
+              );
             }),
           ],
         ),
