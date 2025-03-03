@@ -47,7 +47,7 @@ class ResultScreen extends StatelessWidget {
             Text(
               'You Answered $numCorrectQuestions out of $numTotalQuestions questions correctly!',
               style: GoogleFonts.poppins(
-                color: const Color.fromARGB(255, 255, 255, 255),
+                color: const Color.fromARGB(235, 255, 255, 255),
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
@@ -59,9 +59,9 @@ class ResultScreen extends StatelessWidget {
             OutlinedButton.icon(
               onPressed: restartQuiz,
               style: OutlinedButton.styleFrom(
-                foregroundColor: const Color.fromARGB(255, 255, 255, 255),
+                foregroundColor: const Color.fromARGB(235, 255, 255, 255),
                 side: BorderSide(color: Colors.white),
-                iconColor: Colors.white,
+                iconColor: const Color.fromARGB(235, 255, 255, 255),
               ),
               icon: Icon(Icons.restart_alt_outlined),
               label: const Text('Restart Quiz'),

@@ -31,7 +31,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
     return SizedBox(
       width: double.infinity,
       child: Container(
-        margin: const EdgeInsets.all(20),
+        margin: const EdgeInsets.all(50),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -39,13 +39,13 @@ class _QuestionScreenState extends State<QuestionScreen> {
             Text(
               currentQuestion.text,
               style: GoogleFonts.poppins(
-                color: const Color.fromARGB(185, 140, 6, 6),
+                color: const Color.fromARGB(180, 0, 0, 0),
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 40),
             ...currentQuestion.getShuffledAnswer().map((answer) {
               return Padding(
                 padding: const EdgeInsets.symmetric(vertical: 2.0),
